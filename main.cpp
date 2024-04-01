@@ -4,6 +4,7 @@ using namespace std;
 
 
 int main() {
+    //input the value
     int r, c;
     cout << "Enter row: ";
     cin >> r;
@@ -11,7 +12,7 @@ int main() {
     cin >> c;
 
     int one[r][c];
-
+    //solutionfor multiplying the array
     for (int i = 0; i < r; i++) {
         for (int j = 0; j < c; j++) {
             one[i][j]= (i + 1) * (j + 1);
@@ -19,7 +20,7 @@ int main() {
         }
     }
 
-
+//solution for find the largest element
       int Largest = one[0][0];
     for (int i = 0; i < r; i++) {
         for (int j = 0; j < c; j++) {
